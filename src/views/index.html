@@ -52,11 +52,37 @@
     <header id="first">
         <div class="header-content">
             <div class="inner">
-                <h1 class="cursive">Simple, One Page Design</h1>
+                <h1 class="cursive">Welcome to Yolocrew.com!</h1>
                 <h4>A landing page theme with video background</h4>
                 <hr>
                 <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
             </div>
+            <!-- sign in -->
+            <div class="row">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              Sign In
+                <form name="signInForm"
+                      action="/auth/signIn" 
+                      method="post">
+                  User Name: <input name="userName" id="userName"> <br/>
+                  Password: <input name="password" id="password"> <br />
+                  <input type="submit" value="Sign In">
+                
+                </form>
+            </div>
+            <div class="col-md-10 col-sm-9">
+              Sign Up
+                <form name="signUpForm"
+                      action="/auth/signUp" 
+                      method="post">
+                  User Name: <input name="userName" id="userName"> <br/>
+                  Password: <input name="password" id="password"> <br />
+                  <input type="submit" value="Sign up">
+                
+                </form>
+            </div> <!-- end sign in -->
+          </div>
         </div>
         <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
             <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
